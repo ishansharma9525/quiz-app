@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/quiz.css">
+    <title>Quiz</title>
+</head>
+<body>    
+    <div class="container">
+        <span class="head">
+            <p class="nav">&lt; <span class="pre">previous</span></p>    
+            <span id="logout-btn">logout</span>    
+            <p class="number"></p>            
+        </span>
+        <span class="outer_box">
+            <p class="inner_box"></p>
+        </span>
+
+      <div class="questions">
+        <p class="auto-questions"></p>
+      </div>
+
+      <section></section>
+
+      <button id="nextButton">Next</button>
+      <button id="submitButton" style="display: none">Submit</button>
+    </div>
+        <section></section>
+    </div>
+    <div class="result-container">
+        <h1>Quiz Result</h1>
+        <div>Your Score is: <span class="quiz-score"></span>/20</div>
+        <div class="message">Well done!</div>            
+        <div class="links">
+          <a href="quiz.html" class="retry-button">Try Again</a>
+          <a href="/app/leaderboard.html" class="retry-button">Leaderboard</a>
+        </div>        
+      </div>
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="./quiz.js" type="text/javascript"></script>
+</body>
+</html>
